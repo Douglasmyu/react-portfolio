@@ -1,0 +1,18 @@
+{
+    "work": [
+        {
+            "job":"The Coder School",
+            "positon": "Code Coach",
+            "time": "Feb 2025-Present",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        
+        },{
+            "job":"Revature",
+            "positon": "Back-end Intern",
+            "time": "April 2025-July 2025",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+
+        }
+
+    ]
+}
