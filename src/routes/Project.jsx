@@ -6,7 +6,6 @@ import HandyVision from '../assets/HandyVision.png'
 const imageMap = {
     HandyVision: HandyVision,
 }
-
 function Project() {
     return (
         <div id = "project-section" className = "content-item">

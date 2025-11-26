@@ -2,7 +2,14 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: '#F7F0DE',
+      sage: '#CFE7D8'
+    },
+    boxShadow: {
+      hard: '4px 4px 0 0 rgba(0,0,0,1)',
+      
+    }
   },
   plugins: [],
 };
