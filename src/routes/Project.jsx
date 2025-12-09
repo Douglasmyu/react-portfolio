@@ -1,5 +1,6 @@
 import React from 'react';
 import info from '../info.json';
+import { PiLinkSimpleBold } from "react-icons/pi";
 
 import HandyVision from '../assets/HandyVision.png'
 
@@ -17,6 +18,7 @@ function Project() {
                         <li>
                             <h3>
                                 <a href ={item.link} target='_blank' >{item.title}</a>
+                                <PiLinkSimpleBold></PiLinkSimpleBold>
                             </h3>
                             <p className ="project-date">{item.date}</p>
                             <p className = "project-skills">Skills: {item.skills}</p>

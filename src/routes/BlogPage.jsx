@@ -18,7 +18,7 @@ export default function BlogPage() {
 
   return (
     <div style={{ maxWidth: 800, margin: "2rem auto", padding: "0 1rem" }}>
-      <p><Link to="/"><IoArrowBackCircleSharp />Back to Blogs</Link></p>
+      <p><Link to="/Blogs"><IoArrowBackCircleSharp />Back to Blogs</Link></p>
   
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
