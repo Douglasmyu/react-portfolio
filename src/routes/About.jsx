@@ -11,7 +11,7 @@ import xp from "../xp.json";
 
 const list = ["cool guy", "decent golfer", "best cook", "best driver", "okay coder", "great bartender"];
 let activeTab = "language"
-const language =['C++', 'C#', 'Python', 'JavaScript', "swift", 'HTML/CSS', 'SQL'];
+const language =['C++', 'C#', 'Python', 'JavaScript', "Swift", 'HTML/CSS', 'SQL'];
 const tools =['Unity','Git/Github', 'Xcode','Jypter Notebooks'];
 
 
@@ -41,7 +41,7 @@ return (
       <h2 className="text-2xl font-semibold text-blue-600">Work History</h2>
 
       {/* Timeline */}
-      <ol className="relative border-l border-slate-300 pl-6">
+      <ul className="relative border-l border-slate-300 pl-6">
         {xp.work.map((item, idx) => (
           <li key={item.id ?? `${item.job}-${item.time}-${idx}`} className="mb-8 ml-2 relative">
             {/* Dot */}
@@ -59,6 +59,8 @@ return (
                   {item.time}
                 </span>
               )}
+
+              
             </div>
 
             {item.description && (
@@ -68,18 +70,21 @@ return (
             )}
 
             {/* Optional tags/tech stack */}
-            {Array.isArray(item.tags) && item.tags.length > 0 && (
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {item.tags.map((t, i) => (
-                  <li key={i} className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">
-                    {t}
+            {Array.isArray(item.tech) && item.tech.length > 0 && (
+            
+              <ul className="mt-3 flex flex-wrap gap-6">
+
+                {item.tech.map((techitems, i) => (
+                  <li key={i} 
+                  className="text-xs font-medium px-5 py-1 rounded-full border border-slate-300 shadow-sm hover:bg-slate-200 transition">
+                    {techitems}
                   </li>
                 ))}
               </ul>
             )}
           </li>
         ))}
-      </ol>
+      </ul>
     </div>
 
 

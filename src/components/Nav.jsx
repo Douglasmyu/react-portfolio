@@ -9,13 +9,17 @@ function Nav() {
       flex flex-col items-start
       py-10 px-6
     ">
-      <Link to="/About">
+
+      <button >
+        <Link to="/About">
       {/* import font family */}
           <h1 className="italic">
             Douglas Yu
           </h1>
        
       </Link>
+      </button>
+      
 
       <div className="flex flex-col space-y-4 w-full gap-8">
         <Link to="/About">
