@@ -3,18 +3,34 @@
     "projects": [
         {
             "title": "HandyVision",
-            "skills": "Python, OpenCV, MediaPipe, Flask, HTML, JavaScript",
+            "skills": ["Python", "OpenCV", "MediaPipe", "Flask", "HTML", "JavaScript"],
             "date": "June 2025",
             "summary": "Integrated OpenCV with a Flask backend to serve real-time webcam feed to a responsive frontend, demonstrating full-stack development with computer vision capabilities.",
             "link": "https://github.com/Douglasmyu/HandyVision",
-            "preview": "HandyVision"
+            "preview": "/HandyVision.png"
         },
         {
             "title": "RemoteCollab",
-            "skills": "React, PostgreSQL",
+            "skills": ["React", "PostgreSQL"],
             "date": "July 2025",
             "summary": "Built a full-stack async collaboration tool for distributed teams using React, Express, WebSockets, and OpenAI, enabling voice/text updates, AI-powered summaries, and real-time notifications deployed to Vercel and Railway with CI/CD integration",
             "link": "https://github.com/Douglasmyu/HandyVision",
+            "preview": ""
+        },
+        {   
+            "title": "SymptoQuest",
+            "skills": ["svelte/sveltekit","Firebase"],
+            "date": "Aug 2024",
+            "summary": "",
+            "link": "https://sympto-quest-phi.vercel.app/login",
+            "preview": ""
+        },
+        {
+            "title":"Tuffy Reminder",
+            "skills": ["swift","swiftUI"],
+            "date": "December 2024",
+            "summary":"",
+            "link":"https://github.com/Douglasmyu/Tuffy-Reminder",
             "preview": ""
         }
     ]

@@ -1,5 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLocation} from 'react-router-dom';
+import { FaArrowRightToBracket } from "react-icons/fa6";
+
+
 
 function Nav() {
   return (
@@ -19,10 +22,9 @@ function Nav() {
        
       </Link>
       </button>
-      
 
       <div className="flex flex-col space-y-4 w-full gap-8">
-        <Link to="/About">
+        <Link to="/About" class = "flex item-center gap-2 hover:text-blue-700 transition-colors">
           <p>
             About
           </p>
