@@ -23,7 +23,7 @@
             "date": "Aug 2024",
             "summary": "",
             "link": "https://sympto-quest-phi.vercel.app/login",
-            "preview": ""
+            "preview": "/symptoQuest.png"
         },
         {
             "title":"Tuffy Reminder",
@@ -31,7 +31,7 @@
             "date": "December 2024",
             "summary":"",
             "link":"https://github.com/Douglasmyu/Tuffy-Reminder",
-            "preview": ""
+            "preview": "/tuffyreminder2.png"
         }
     ]
 }
