@@ -17,12 +17,12 @@ function Project() {
                             </h3>
                             <p>{item.date}</p>
                             <p>{item.summary}</p>
-                            <div class ="w-12 h-12 flex items-center justify-center overflow-hidden">
+                            <div id ="pic-frame" class ="w-12 h-12 flex items-center justify-center overflow-hidden">
                                 <img 
-                            src={item.preview}
-                            alt={item.title}
-                            className="w-full h-full object-scale-down rounded-md border"
-                            />
+                                src={item.preview}
+                                alt={item.title}
+                                className="w-full h-full object-scale-down rounded-md border"
+                                />
                             </div>
                             
                             {Array.isArray(item.skills) && item.skills.length> 0 && (

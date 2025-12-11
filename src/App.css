@@ -6,3 +6,8 @@ a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+  background-color: #F7F0DE;
+}
+

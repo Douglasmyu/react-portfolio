@@ -21,7 +21,7 @@
             "title": "SymptoQuest",
             "skills": ["svelte/sveltekit","Firebase"],
             "date": "Aug 2024",
-            "summary": "",
+            "summary": "SymptoQuest is a web application that provides accurate medical diagnosis based on user input symptoms",
             "link": "https://sympto-quest-phi.vercel.app/login",
             "preview": "/symptoQuest.png"
         },
@@ -29,7 +29,7 @@
             "title":"Tuffy Reminder",
             "skills": ["swift","swiftUI"],
             "date": "December 2024",
-            "summary":"",
+            "summary":"IOS task manager app that lets users create task, set a due date, and time their work, improving effiency",
             "link":"https://github.com/Douglasmyu/Tuffy-Reminder",
             "preview": "/tuffyreminder2.png"
         }
