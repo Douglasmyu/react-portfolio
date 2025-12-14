@@ -5,6 +5,7 @@ import About from './routes/About';
 import Project from './routes/Project';
 import Footer from './components/Footer';
 import Blogs from './routes/Blogs';
+import BlogPage from './routes/BlogPage';
 import { Routes,Route } from 'react-router-dom';
 
 
@@ -17,20 +18,30 @@ function App() {
     
       <div id ="body" className="content" >
         <main className = "p-10 space-y-16">
-          <section id = "about">
-            <About />
-          </section>
-          <section id = "projects">
-            <Project />
-          </section>
-          <section id = "blogs">
-            <Blogs />
-              <Routes>
-                <Route path="/Blogs" element={<Blogs />} />
-              </Routes>
-          </section>
+          
+          <Routes>
+                <Route path="/" element ={
+                  <>
+                  <section id="about">
+                    <About />
+                  </section>
 
-        <Footer />
+                  <section id="projects">
+                    <Project />
+                  </section>
+
+                  <section id="blogs">
+                    <Blogs />
+                  </section>
+
+                  <Footer />
+                </>
+              }
+              />
+
+              <Route path="/blog/:slug" element={<BlogPage />} />
+          </Routes>
+
       </main>
       
       </div>
