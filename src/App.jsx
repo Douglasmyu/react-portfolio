@@ -10,10 +10,13 @@ import { Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div id ="nav" className = "bg-[#F7F0DE] min-h-screen">
-      <Nav />
-      <div id ="body" className="flex-1 pl-56" >
-        <main className = " ml-56 p-10 bg-[#F7F0DE] space-y-16">
+    <div id ="nav" className = "min-h-screen flex bg-background">
+      <div className='sidebar'>
+        <Nav />
+      </div>
+    
+      <div id ="body" className="fcontent" >
+        <main className = "p-10 space-y-16">
           <section id = "about">
             <About />
           </section>
@@ -22,9 +25,9 @@ function App() {
           </section>
           <section id = "blogs">
             <Blogs />
-            <Routes>
-              <Route path="/Blogs" element={<Blogs />} />
-            </Routes>
+              <Routes>
+                <Route path="/Blogs" element={<Blogs />} />
+              </Routes>
           </section>
 
         <Footer />

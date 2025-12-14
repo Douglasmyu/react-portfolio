@@ -6,21 +6,15 @@ import { FaArrowRightToBracket } from "react-icons/fa6";
 
 function Nav() {
   return (
-    <nav className="
-      fixed top-0 left-0 h-screen w-56
-        bg-[#CFE7D8] shadow-lg
-        flex flex-col items-start
-        py-10 px-6
-    ">
-
-      <button class="bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">
+    <nav className="flex flex-col items-start py-10 px-6">
+      
+      <button class="flex flex-col space-y-4 w-full">
         <Link to="/About">
       {/* import font family */}
           <h1 className="italic">
             Douglas Yu
           </h1>
-       
-      </Link>
+        </Link>
       </button>
 
       <div className="flex flex-col space-y-4 w-full">
