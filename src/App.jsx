@@ -10,12 +10,12 @@ import { Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div id ="nav" className = "min-h-screen flex bg-background">
-      <div className='sidebar'>
+    <div id ="nav" className = "min-h-screen bg-[#F7F0DE] flex">
+      <div className="fixed">
         <Nav />
       </div>
     
-      <div id ="body" className="fcontent" >
+      <div id ="body" className="content" >
         <main className = "p-10 space-y-16">
           <section id = "about">
             <About />
