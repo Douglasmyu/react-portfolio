@@ -17,20 +17,20 @@ function App() {
       </div>
     
       <div id ="body" className="content" >
-        <main className = "p-10 space-y-16">
+        <main className = "p-10 space-y-16 pt-50">
           
           <Routes>
                 <Route path="/" element ={
                   <>
-                  <section id="about">
+                  <section id="about" className="min-h-screen bg-[#F7F0DE]">
                     <About />
                   </section>
 
-                  <section id="projects">
+                  <section id="projects" className="min-h-screen bg-[#F7F0DE]">
                     <Project />
                   </section>
 
-                  <section id="blogs">
+                  <section id="blogs" className="min-h-screen bg-[#F7F0DE]">
                     <Blogs />
                   </section>
 

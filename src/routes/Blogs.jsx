@@ -20,6 +20,10 @@ function getDate(markdown){
     return match ? match[1].trim() : null;
 }
 
+function sortByDate(posts){
+    return posts.slice().sort((a,b) => new Date(b.date) - new Date(a.date))
+
+}
 const post= Object.entries(files).map(([path, content]) => {
     const slug = path.split("/").pop().replace(/\.md$/,"");
     const title = getTitle(content);
@@ -32,7 +36,7 @@ export default function Blogs() {
             <h1 style={{ maxWidth: 800, margin: "2rem auto", padding: "0 1rem" }}>Blogs</h1>
             <p>These are my blogs.  I decided to start writing blogs as an alternative to doom scrolling.</p>
             <ul>
-                {post.slice().reverse().map(({ slug, title, date})=>
+                {sortByDate(post).slice().map(({ slug, title, date})=>
                     <li key = {slug}>
                         <Link to={`/blog/${slug}`}>{title}</Link>
                         {date &&(

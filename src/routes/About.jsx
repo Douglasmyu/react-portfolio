@@ -1,35 +1,22 @@
 import React, { useState, useEffect} from 'react';
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { PiReadCvLogoFill } from "react-icons/pi";
 import info from "../info.json";
-import PDF from "../assets/Douglas_Yu.pdf";
 import xp from "../xp.json";
 // basically the home page
 
 
-const list = ["cool guy", "decent golfer", "best cook", "best driver", "okay coder", "great bartender"];
 const language =['C++', 'C#', 'Python', 'JavaScript', "Swift", 'HTML/CSS', 'SQL'];
 const tools =['Unity','Git/Github', 'Xcode','Jypter Notebooks'];
 
 
-function About({ description}) {
+function About() {
   
-  const [index, setIndex] = useState(0);
+  
 
-  useEffect(()=> {
-    const timeout = setTimeout(()=>{
-      setIndex(prev => (prev + 1) % list.length);
-    },2000);
-    return () => clearTimeout(timeout);
-  },[index]);
 
 return (
   <section id="work-xp" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6">
     <header className="space-y-2">
-      <h1 className="text-3xl font-bold text-slate-900">About me</h1>
-      <h2 className = "text-2xl font-light text-blue-600">{list[index]}</h2>
+      
     
       <p className="text-slate-700 leading-7">{info.aboutme}</p>
     </header>
@@ -84,11 +71,11 @@ return (
     </div>
 
 
-    <div id="skills" class="flex flex-col gap-4">
-      <h2 class="text-2xl font-semibold">Skills</h2>
+    <div id="skills" className="flex flex-col gap-4">
+      <h2 className="text-2xl font-semibold">Skills</h2>
       
-      <div class="flex flex-row gap-4">
-        <div id="language" class="w-1/2 bg-blue-200 p-4 border border-black rounded-lg">
+      <div className="flex flex-row gap-4">
+        <div id="language" className="w-1/2 bg-blue-200 p-4 border border-black rounded-lg">
           <h3>languages</h3>
           <ul>
             {language.map((item,index)=>
@@ -96,7 +83,7 @@ return (
             )}
           </ul>
         </div>
-        <div id="tools" class="w-1/2 bg-blue-200 p-4 border border-black rounded-lg">
+        <div id="tools" className="w-1/2 bg-blue-200 p-4 border border-black rounded-lg">
           <h3>Tools</h3>
           <ul>
             {tools.map((item, index)=>
@@ -108,16 +95,6 @@ return (
     </div>
 
 
-    <div id="footer">
-        <h1>Connect with me!</h1>
-        <ul>
-            <a href="https://github.com/Douglasmyu"><FaGithub /> Github</a>
-            <a href="www.linkedin.com/in/douglasmyu"><FaLinkedin /> LinkedIn</a>
-            <a href={PDF} target='_blank' rel='noopener noreffere'><PiReadCvLogoFill /> Resume</a>
-            <a href=" "><MdEmail /> yudouglasyu@gmail.com</a>
-              
-        </ul>
-    </div>
   </section>
 );
 }

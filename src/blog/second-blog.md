@@ -19,7 +19,6 @@ with 80% tempo.  Things like that can help you improve by a lot.
 
 ---
 
-
 ## Watched a Movie
 I also watched the movie Weapons and it was not what I was expecting.
 Can't really say much without spoiling it but the final act was what
