@@ -3,18 +3,26 @@
         {
             "job":"The Coder School",
             "positon": "Code Coach",
-            "time": "Feb 2025-Present",
+            "time": "Feb 2025- Present",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "tech": ["python", "javascript"]
 
         },{
             "job":"Revature",
             "positon": "Back-end Intern",
-            "time": "April 2025-July 2025",
+            "time": "April 2025 - July 2025",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "tech": ["Java","SQL"]
 
         }
 
+    ],
+    "education":[
+        {
+            "school": "California State University, Fullerton",
+            "major": "B.S in Computer Science",
+            "time": "Jan 2023 - May 2025"
+
+        }
     ]
 }

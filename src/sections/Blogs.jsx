@@ -33,11 +33,13 @@ const post= Object.entries(files).map(([path, content]) => {
 export default function Blogs() {
     return(
         <div>
-            <h1 style={{ maxWidth: 800, margin: "2rem auto", padding: "0 1rem" }}>Blogs</h1>
+            <h1 className="font-bold text-2xl">Blogs</h1>
             <p>These are my blogs.  I decided to start writing blogs as an alternative to doom scrolling.</p>
-            <ul>
+            <div className="grid gap-6">
                 {sortByDate(post).slice().map(({ slug, title, date})=>
-                    <li key = {slug}>
+                
+                    <div key = {slug} className="bg-amber-200 hover:bg-amber-300 transition duration-300
+                    p-4 rounded">
                         <Link to={`/blog/${slug}`}>{title}</Link>
                         {date &&(
                             <p>
@@ -49,9 +51,10 @@ export default function Blogs() {
                             </p>
                         )}
 
-                    </li>
+                    </div>
                 )}
-            </ul>
+            </div>
+            
         </div>
     )
 }

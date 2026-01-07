@@ -1,11 +1,11 @@
 
 import './App.css'
 import Nav from './components/Nav';
-import About from './routes/About';
-import Project from './routes/Project';
+import About from './sections/About';
+import Project from './sections/Project';
 import Footer from './components/Footer';
-import Blogs from './routes/Blogs';
-import BlogPage from './routes/BlogPage';
+import Blogs from './sections/Blogs';
+import BlogPage from './sections/BlogPage';
 import { Routes,Route } from 'react-router-dom';
 
 
@@ -16,8 +16,8 @@ function App() {
         <Nav />
       </div>
     
-      <div id ="body" className="content" >
-        <main className = "p-10 space-y-16 pt-50">
+      <div id ="body" className="" >
+        <main >
           
           <Routes>
                 <Route path="/" element ={

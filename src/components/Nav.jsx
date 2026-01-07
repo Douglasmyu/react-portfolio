@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 import PDF from "../assets/Douglas_Yu.pdf";
 
+
 const list = [
   "cool guy",
   "decent golfer",
@@ -16,12 +17,14 @@ const list = [
 
 function CopyEmail({ email }) {
   const [isCopied, setCopied] = useState(false);
+  const [message, setMessage] = useState(null);
 
   const copyEmailToClipboard = async (e) => {
     e.preventDefault();
     try {
       await navigator.clipboard.writeText(email);
       setCopied(true);
+      setMessage("Email Copied")
       setTimeout(() => setCopied(false), 3000);
     } catch (err) {
       console.error("failed to copy", err);
@@ -86,9 +89,9 @@ function Nav() {
   ];
 
   return (
-    <nav className="fixed flex-col items-start py-10 px-6 pt-[40px] bg-[#CFE7D8] h-screen w-56">
+    <nav className="fixed flex-col items-start py-10 px-6 pt-10 bg-[#CFE7D8] h-screen w-56">
       <a href="#about">
-        <h1 className="italic">Douglas Yu</h1>
+        <h1 className="font-bold text-4xl">Douglas Yu</h1>
         <h2 className="text-2xl font-light text-blue-600">{list[index]}</h2>
       </a>
 
@@ -112,7 +115,7 @@ function Nav() {
       </div>
 
       <div id="footer" className="mt-auto pt-10">
-        <ul className="flex gap-3 items-center">
+        <ul className="grid-cols-1">
           <a href="https://github.com/Douglasmyu">
             <FaGithub />
           </a>

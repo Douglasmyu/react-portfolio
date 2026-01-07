@@ -1,15 +1,10 @@
-/** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
-    extend: {
-      colors: '#F7F0DE',
-      sage: '#CFE7D8'
-    },
-    boxShadow: {
-      hard: '4px 4px 0 0 rgba(0,0,0,1)',
-      
-    }
+    extend: {},
   },
   plugins: [],
 };
