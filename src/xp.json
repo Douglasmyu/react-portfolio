@@ -21,7 +21,8 @@
         {
             "school": "California State University, Fullerton",
             "major": "B.S in Computer Science",
-            "time": "Jan 2023 - May 2025"
+            "time": "Jan 2023 - May 2025",
+            "courses":["","","","","","","",""]
 
         }
     ]

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import info from '../info.json';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { PiReadCvLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
@@ -39,7 +40,7 @@ function CopyEmail({ email }) {
       className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
     >
       <MdEmail className="text-lg" />
-      {isCopied ? "Email Copied!" : `Copy ${email}`}
+      {isCopied ? "Email Copied!" : ``}
     </a>
   );
 }
@@ -94,8 +95,10 @@ function Nav() {
         <h1 className="font-bold text-4xl">Douglas Yu</h1>
         <h2 className="text-2xl font-light text-blue-600">{list[index]}</h2>
       </a>
-
-      <div className="flex flex-col space-y-4 w-full mt-10">
+      <div>
+        {info.aboutme}
+      </div>
+      <div className="flex-col grid gap-8 space-y-4 w-full mt-5">
         {navItems.map(({ id, label }) => (
           <a
             key={id}
@@ -113,18 +116,20 @@ function Nav() {
           </a>
         ))}
       </div>
-
+      <div>
+        <a href={PDF} target="_blank" rel="noopener noreferrer">
+            RESUME
+          </a>
+      </div>
       <div id="footer" className="mt-auto pt-10">
-        <ul className="grid-cols-1">
+        <ul className="grid grid-cols-3 items-center">
           <a href="https://github.com/Douglasmyu">
             <FaGithub />
           </a>
           <a href="https://linkedin.com/in/douglasmyu">
             <FaLinkedin />
           </a>
-          <a href={PDF} target="_blank" rel="noopener noreferrer">
-            <PiReadCvLogoFill />
-          </a>
+          
           <CopyEmail email="yudouglasyu@gmail.com" />
         </ul>
       </div>
