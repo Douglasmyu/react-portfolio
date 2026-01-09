@@ -14,7 +14,10 @@ const list = [
   "best driver",
   "okay coder",
   "great bartender",
+  "plays badminton",
+  "Fortnite player"
 ];
+
 
 function CopyEmail({ email }) {
   const [isCopied, setCopied] = useState(false);
@@ -47,7 +50,7 @@ function CopyEmail({ email }) {
 
 function Nav() {
   const [index, setIndex] = useState(0);
-  const [activeSection, setActiveSection] = useState("about");
+  const [isMenuOpen, setMenuOpen ] = useState(false);
 
   // rotating text
   useEffect(() => {
@@ -57,70 +60,24 @@ function Nav() {
     return () => clearTimeout(timeout);
   }, [index]);
 
-  // section detection logic
-  useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // mark whichever section is at least 50% visible
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        root: null,
-        rootMargin: "0px 0px -40% 0px", // triggers a bit before it fully enters view
-        threshold: 0.5,
-      }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
-
-  const navItems = [
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "blogs", label: "Blogs" },
-  ];
-
   return (
     <nav className="fixed flex-col items-start py-10 px-6 pt-10 bg-[#CFE7D8] h-screen w-56">
-      <a href="#about">
+      <div>
         <h1 className="font-bold text-4xl">Douglas Yu</h1>
-        <h2 className="text-2xl font-light text-blue-600">{list[index]}</h2>
-      </a>
+        <h2 className="text-2xl font-light text-blue-600">{list[index]}</h2>       
+      </div>
       <div>
         {info.aboutme}
       </div>
-      <div className="flex-col grid gap-8 space-y-4 w-full mt-5">
-        {navItems.map(({ id, label }) => (
-          <a
-            key={id}
-            href={`#${id}`}
-            className={`flex items-center gap-2 transition-all duration-200 ${
-              activeSection === id
-                ? "text-blue-700 font-semibold"
-                : "text-gray-700 hover:text-blue-600 hover:underline"
-            }`}
-          >
-            {activeSection === id && (
-              <FaArrowRight className="text-blue-700 transition-transform duration-200" />
-            )}
-            <span>{label}</span>
-          </a>
-        ))}
-      </div>
-      <div>
+      <div className="flex-col grid gap-6 space-y-4 w-full mt-5">
+        <a href="#about"><h3 className="hover:text-blue-500">About</h3></a>
+        <a href="#projects"><h3 className="hover:text-blue-500">Projects</h3></a>
+        <a href="#blogs"><h3 className="hover:text-blue-500">Blogs</h3></a>
         <a href={PDF} target="_blank" rel="noopener noreferrer">
-            RESUME
+          <h3 className="hover:text-blue-500">RESUME</h3>
           </a>
       </div>
+
       <div id="footer" className="mt-auto pt-10">
         <ul className="grid grid-cols-3 items-center">
           <a href="https://github.com/Douglasmyu">
