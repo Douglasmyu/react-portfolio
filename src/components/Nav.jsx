@@ -50,7 +50,6 @@ function CopyEmail({ email }) {
 
 function Nav() {
   const [index, setIndex] = useState(0);
-  const [isMenuOpen, setMenuOpen ] = useState(false);
 
   // rotating text
   useEffect(() => {

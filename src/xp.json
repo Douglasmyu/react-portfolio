@@ -4,14 +4,14 @@
             "job":"The Coder School",
             "positon": "Code Coach",
             "time": "Feb 2025- Present",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "description": "Documented student progress, identified gaps and blockers, and guided next-step solutions while explaining technical concepts clearly to non-technical learners.",
             "tech": ["python", "javascript"]
 
         },{
             "job":"Revature",
             "positon": "Back-end Intern",
             "time": "April 2025 - July 2025",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "description": "Built and maintained Java-based REST APIs with Spring Boot and Javalin, integrating SQL databases and troubleshooting defects to deliver reliable backend functionality.",
             "tech": ["Java","SQL"]
 
         }
@@ -22,7 +22,7 @@
             "school": "California State University, Fullerton",
             "major": "B.S in Computer Science",
             "time": "Jan 2023 - May 2025",
-            "courses":["","","","","","","",""]
+            "courses":["data structures","Algorithms","Software Engineering","","","","",""]
 
         }
     ]

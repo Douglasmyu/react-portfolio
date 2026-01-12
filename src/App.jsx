@@ -1,5 +1,6 @@
 
 import './App.css'
+import { useState } from 'react';
 import Nav from './components/Nav';
 import About from './sections/About';
 import Project from './sections/Project';
@@ -10,6 +11,8 @@ import { Routes,Route } from 'react-router-dom';
 
 
 function App() {
+  const [isMenuOpen, setMenuOpen ] = useState(false);
+
   return (
     <div id ="nav" className = "min-h-screen bg-[#F7F0DE] flex">
       <div className="fixed">
