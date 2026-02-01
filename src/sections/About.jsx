@@ -19,10 +19,14 @@ return (
           <li key = {item.id ?? `${item.school}-${item.time}-${idx}`} className='mb-8 ml-2 relative'>
             <div className='flex flex-wrap items-baseline gap-x-2'>
               <h3 className='text-lg font-semibold text-slate-900'>
-                {item.school}
+                {item.school} 
                 </h3>
               <h4>{item.major}</h4>
               <span className='ml-auto text-sm text-slate-500'>{item.time}</span>
+              <p>Relavent Coursework:</p>
+              {item.courses.map((courseItems, i) =>(
+                <p key = {i}>{courseItems},</p>
+              ))}
             </div>
           </li>
         ))}

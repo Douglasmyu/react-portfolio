@@ -9,12 +9,13 @@
             "link": "https://github.com/Douglasmyu/HandyVision"
         },
         {
-            "title": "RemoteCollab",
-            "skills": ["React", "PostgreSQL"],
-            "date": "July 2025",
-            "summary": "Built a full-stack async collaboration tool for distributed teams using React, Express, WebSockets, and OpenAI, enabling voice/text updates, AI-powered summaries, and real-time notifications deployed to Vercel and Railway with CI/CD integration",
-            "link": "https://github.com/Douglasmyu/remote-collab-react"
+            "title":"PageFlow",
+            "skills": ["React", "Postsql"],
+            "date":"December 2025 - present",
+            "summary": "Book tracking app",
+            "link": "https://github.com/Douglasmyu/PageFlow"
         },
+  
         {   
             "title": "SymptoQuest",
             "skills": ["svelte/sveltekit","Firebase"],
