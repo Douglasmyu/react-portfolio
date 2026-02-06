@@ -11,45 +11,58 @@ import { Routes,Route } from 'react-router-dom';
 
 
 function App() {
-  const [isMenuOpen, setMenuOpen ] = useState(false);
 
   return (
-    <div id ="nav" className = "min-h-screen bg-[#F7F0DE] flex">
-      <div className="fixed">
-        <Nav />
-      </div>
-    
-      <div id ="body" className="" >
-        <main >
-          
-          <Routes>
-                <Route path="/" element ={
-                  <>
-                  <section id="about" className="min-h-screen bg-[#F7F0DE]">
-                    <About />
-                  </section>
-
-                  <section id="projects" className="min-h-screen bg-[#F7F0DE]">
-                    <Project />
-                  </section>
-
-                  <section id="blogs" className="min-h-screen bg-[#F7F0DE]">
-                    <Blogs />
-                  </section>
-
-                  <Footer />
-                </>
-              }
-              />
-
-              <Route path="/blog/:slug" element={<BlogPage />} />
-          </Routes>
-
-      </main>
+    <div>
+      <Nav />
       
-      </div>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:slug" element={<BlogPage />} />
+
+
+      </Routes>
+      <Footer />
       
     </div>
+    // <div id ="nav" className = "min-h-screen bg-[#F7F0DE] flex">
+    //   <div className="fixed">
+    //     <Nav />
+    //   </div>
+    
+    //   <div id ="body" className="" >
+    //     <main >
+          
+    //       <Routes>
+    //             <Route path="/" element ={
+    //               <>
+    //               <section id="about" className="min-h-screen bg-[#F7F0DE]">
+    //                 <About />
+    //               </section>
+
+    //               <section id="projects" className="min-h-screen bg-[#F7F0DE]">
+    //                 <Project />
+    //               </section>
+
+    //               <section id="blogs" className="min-h-screen bg-[#F7F0DE]">
+    //                 <Blogs />
+    //               </section>
+
+    //               <Footer />
+    //             </>
+    //           }
+    //           />
+
+    //           <Route path="/blog/:slug" element={<BlogPage />} />
+    //       </Routes>
+
+    //   </main>
+      
+    //   </div>
+      
+    // </div>
   )
 }
 

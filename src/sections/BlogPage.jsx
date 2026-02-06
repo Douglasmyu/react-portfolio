@@ -17,8 +17,8 @@ export default function BlogPage() {
   const content = files[key] ?? "# Post not found";
 
   return (
-    <div style={{ maxWidth: 800, margin: "2rem auto", padding: "0 1rem" }}>
-      <p><Link to="/"><IoArrowBackCircleSharp />Back to Blogs</Link></p>
+    <div style={{ maxWidth: 800, margin: "2rem auto", padding: "0 1rem" , marginTop: "11rem"}} >
+      <p><Link to="/blogs"><IoArrowBackCircleSharp />Back to Blogs</Link></p>
   
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>

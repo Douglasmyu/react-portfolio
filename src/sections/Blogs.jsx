@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
@@ -32,29 +33,31 @@ const post= Object.entries(files).map(([path, content]) => {
 })
 export default function Blogs() {
     return(
-        <div>
+        <div className="space-y-4 max-w-4xl mx-auto p-4 pt-45">
             <h1 className="font-bold text-2xl">Blogs</h1>
             <p>These are my blogs.  I decided to start writing blogs as an alternative to doom scrolling.</p>
             <div className="grid gap-6">
                 {sortByDate(post).slice().map(({ slug, title, date})=>
                 
-                    <div key = {slug} className="bg-amber-200 hover:bg-amber-300 transition duration-300
-                    p-4 rounded">
-                        <Link to={`/blog/${slug}`}>{title}</Link>
-                        {date &&(
-                            <p>
-                                {new Date(date).toLocaleDateString("en-US", {
-                                    year:"numeric",
-                                    month:"long",
-                                    day:"numeric",
-                                })}
-                            </p>
-                        )}
-
+                    <div key = {slug}>
+                        
+                        <Link to={`/blogs/${slug}`}>
+                        <div className="bg-[#44475A] p-4 rounded">
+                            <h3>{title}</h3>
+                            {date &&(
+                                <p>
+                                    {new Date(date).toLocaleDateString("en-US", {
+                                        year:"numeric",
+                                        month:"long",
+                                        day:"numeric",
+                                    })}
+                                </p>
+                            )}
+                        </div>
+                        </Link>
                     </div>
                 )}
-            </div>
-            
+            </div>        
         </div>
-    )
+    );
 }

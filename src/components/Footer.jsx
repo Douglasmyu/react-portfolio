@@ -1,6 +1,8 @@
+
+
 function Footer() {
     return (
-        <footer>© 2025 DougyWougy</footer>
+        <footer className="flex h-3/4 items-end justify-center"><p>© 2026 DougyWougy</p></footer>
 
     )
 }
