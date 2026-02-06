@@ -17,7 +17,7 @@ function Project() {
                         </h3>
                         <a href={item.link} target="_blank" rel="noopener noreferrer"
                             className=''>
-                            <RiGithubLine  color="#FF79C6"/>
+                            <RiGithubLine  color="#8BE9FD"/>
 
                         </a>
                         

@@ -1,6 +1,6 @@
 # Getting Better 1% at a Time
 **Date:** 2025-08-08
-**Min:** 4 min read
+**Min:** 1 min read
 
 ---
 

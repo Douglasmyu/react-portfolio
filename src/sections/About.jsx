@@ -22,9 +22,9 @@ return (
       <p>{info.aboutme}</p>
     </div>
     <div className="flex flex-row gap-3">
-      <a href='https://github.com/Douglasmyu'><FiGithub size={40} color="#FF79C6"/></a>
-      <a href='https://www.linkedin.com/in/douglasmyu/'><FiLinkedin size={40} color="#FF79C6"/></a>
-      <a href={PDF} target="_blank" rel="noopener noreferrer"><IoDocumentTextOutline size={40} color="#FF79C6"/></a>
+      <a href='https://github.com/Douglasmyu'><FiGithub size={40} color="#8BE9FD"/></a>
+      <a href='https://www.linkedin.com/in/douglasmyu/'><FiLinkedin size={40} color="#8BE9FD"/></a>
+      <a href={PDF} target="_blank" rel="noopener noreferrer"><IoDocumentTextOutline size={40} color="#8BE9FD"/></a>
     </div>
     
     <div id = "educate">
