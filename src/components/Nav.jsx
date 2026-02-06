@@ -7,9 +7,8 @@ import { Link } from "react-router-dom";
 
 const list = [
   "cool guy",
-  "decent golfer",
+  "average golfer",
   "best cook",
-  "best driver",
   "great bartender",
   "plays badminton",
   "Fortnite player"

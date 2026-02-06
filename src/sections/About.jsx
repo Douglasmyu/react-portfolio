@@ -5,7 +5,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { MdEmail } from "react-icons/md";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
-import PDF from "../assets/Douglas_Yu.pdf";
+import PDF from "../assets/DouglasYu_SWE_Resume.pdf";
 // basically the home page
 
 
@@ -60,7 +60,7 @@ return (
             <li key={item.id ?? `${item.job}-${item.time}-${idx}`} className='mb-5 ml-2 relative'>
               <div className='flex flex-col items-baseline gap-x-2'>
                 <h3 className="text-lg font-semibold text-slate-900">
-                  {item.positon} <span> @ {item.job}</span>
+                  {item.positon} <span> <h4 className='text-base'> @ {item.job}</h4></span>
                 </h3>
                 {item.time && (
                 <span className="ml-auto text-sm text-slate-500">
